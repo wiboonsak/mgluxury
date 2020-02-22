@@ -1,0 +1,35 @@
+@font-face {
+	font-family: 'mg';
+	src:url('../fonts/mg/MG_Regular.eot');
+	src:url('../fonts/mg/MG_Regular.eot?#iefix-bz6wzy') format('embedded-opentype'),
+		url('../fonts/mg/MG_Regular.woff') format('woff'),
+		url('../fonts/mg/MG_Regular.ttf') format('truetype'),
+		url('../fonts/mg/MG_Regular.svg#mg') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+.kopa-icon {
+	font-family: 'MG_Regular';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.kopa-earth:before {
+	content: "\e600";
+}
+.kopa-image:before {
+	content: "\e601";
+}
+.kopa-play:before {
+	content: "\e602";
+}
+

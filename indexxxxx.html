@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<div id="loadContent"></div>
+</body>
+	<script>
+	    var indexUrl ='index.php';  
+		//--------------------------------------
+		$.post( "get_content.php", { } ,  function( data ) {
+		 
+          if(data!='goindex'){
+		  	$( "#loadContent" ).html( data );
+			$("a").attr("href", indexUrl);
+		  }else if(data=='goindex'){
+			  window.location.href=indexUrl;
+		  }
+		 // console.log(data)
+		});
+		
+		//--------------------------------------
+		 $(document).ready(function() {
+        		document.title = window.location.hostname;
+    	});
+
+	</script>
+</html>
